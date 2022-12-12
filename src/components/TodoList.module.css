@@ -2,7 +2,6 @@
   list-style: none;
   color: var(--primary-text-color);
   padding: 1rem 2rem;
-  min-height: 200px;
 }
 
 .mainContainer {
@@ -46,9 +45,7 @@ input[type='checkbox'] {
 }
 
 @media screen and (max-width: 768px) {
-  .container {
-    min-height: 160px;
-  }
+ 
   .delete {
     font-size: 1rem;
   }
