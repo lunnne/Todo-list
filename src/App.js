@@ -24,25 +24,25 @@ function App() {
 
 
   useEffect (() => {
+    const handleFilter = () => {
+      switch (status) {
+        case 'Active':
+          setFilteredList(todoList.filter((item) => item.completed === false));
+          break;
+  
+        case 'Completed':
+          setFilteredList(todoList.filter((item) => item.completed === true));
+          break;
+  
+        default:
+          setFilteredList(todoList);
+          break;
+      }
+    };  
     handleFilter();
   },[todoList, status])
 
-  const handleFilter = () => {
-    switch (status) {
-      case 'Active':
-        setFilteredList(todoList.filter((item) => item.completed === false));
-        break;
-
-      case 'Completed':
-        setFilteredList(todoList.filter((item) => item.completed === true));
-        break;
-
-      default:
-        setFilteredList(todoList);
-        break;
-    }
-  };
-
+  
 
   return (
 
