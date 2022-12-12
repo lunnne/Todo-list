@@ -1,0 +1,54 @@
+
+.addContainer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+
+.addInput {
+    height: 40px;
+    width: 300px;
+    border-radius: 0.99em;
+    border-style: 1px solid var(--primary-header-border-color);
+
+}
+
+.addBtn {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    background-color: orange;
+    color: white;
+    font-weight: 700;
+    border-color: orange ;
+    border-radius: 0.99em;
+    border-style: 1px solid var(--primary-header-border-color);
+
+}
+
+@media screen and (max-width: 768px) {
+   
+.addInput {
+    height: 40px;
+    width: 250px;
+
+}
+.addBtn {
+    font-size: 0.8rem;
+}
+  }
+
+  
+@media screen and (max-width: 360px) {
+   
+    .addInput {
+        height: 30px;
+        width: 200px;
+    
+    }
+    .addBtn {
+        font-size: 0.8rem;
+    }
+      }

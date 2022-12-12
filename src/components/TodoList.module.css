@@ -1,0 +1,63 @@
+.container {
+  list-style: none;
+  color: var(--primary-text-color);
+  padding: 1rem 2rem;
+  min-height: 200px;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.formControl {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.1;
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+}
+
+.todoItem {
+  font-size: 1rem;
+}
+
+.completed {
+  font-size: 1rem;
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+input[type='checkbox'] {
+  display: grid;
+  place-content: center;
+}
+
+.innerContainer {
+  display: flex;
+}
+
+.delete {
+  font-size: 1.2rem;
+  border: none;
+  background: none;
+  color: var(--primary-text-color);
+}
+
+@media screen and (max-width: 360px) {
+  .container {
+    min-height: 160px;
+  }
+  .delete {
+    font-size: 1rem;
+  }
+  .formControl {
+    font-size: 1.5rem;
+  }
+
+  .todoItem,
+  .completed {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&display=swap');
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background: var(--primary-overlay-bg);
+
+  --primary-modal-bg: #22243a;
+  --primary-overlay-bg: #424555;
+  --primary-header-bg: #191b36;
+  --primary-text-color: white;
+  --primary-header-border-color: grey;
+}
+
+.light {
+  --primary-modal-bg: #e8e8e8;
+  --primary-overlay-bg: #22243a;
+  --primary-header-bg: #e3e3e3;
+  --primary-header-border-color: #cdcdcd;
+  --primary-text-color: rgb(49, 49, 49);
+}
+
+.overlay {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: var(--primary-modal-bg);
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  box-shadow: 20px 14px 27px -6px rgba(0, 0, 0, 0.76);
+  -webkit-box-shadow: 20px 14px 27px -6px rgba(0, 0, 0, 0.76);
+  -moz-box-shadow: 20px 14px 27px -6px rgba(0, 0, 0, 0.76);
+}
+
+@media screen and (max-width: 768px) {
+  .modal {
+    width: 370px;
+    height: 380px;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .modal {
+    width: 320px;
+    height: 340px;
+    font-size: 0.8rem;
+  }
+}
