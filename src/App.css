@@ -29,8 +29,8 @@ body {
 
 .modal {
   background-color: var(--primary-modal-bg);
-  width: 500px;
-  height: 500px;
+  width: 40%;
+  height: 40%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -42,16 +42,16 @@ body {
 
 @media screen and (max-width: 768px) {
   .modal {
-    width: 370px;
-    height: 380px;
+    width: 90vw;
+    height: 40vh;
     font-size: 1rem;
   }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 375px) {
   .modal {
-    width: 320px;
-    height: 340px;
+    width: 90vw;
+    height: 40vh;
     font-size: 0.8rem;
   }
 }

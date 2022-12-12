@@ -31,8 +31,8 @@
 @media screen and (max-width: 768px) {
    
 .addInput {
-    height: 40px;
-    width: 250px;
+    height: 30px;
+    width: 200px;
 
 }
 .addBtn {
@@ -41,7 +41,7 @@
   }
 
   
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 390px) {
    
     .addInput {
         height: 30px;
@@ -50,5 +50,9 @@
     }
     .addBtn {
         font-size: 0.8rem;
+    }
+
+    .addContainer {
+
     }
       }
